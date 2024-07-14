@@ -1,4 +1,4 @@
-version: '3.2'
+version: '3.8'
 services:
   app:
     build:
@@ -7,9 +7,7 @@ services:
 
 
     # dockerfile: Dockerfile
-    container_name: 'cuda_python'
-    devices:
-      - /dev/nvidia0
+    container_name: 'RSNA'
     working_dir: '/workspace'
     volumes:
       -  ./:/workspace/
